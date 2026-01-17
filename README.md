@@ -1,6 +1,6 @@
 # Analyse des données COVID-19 et prédiction des risques de santé
 
-## 📋 Description du projet
+##  Description du projet
 
 Ce projet vise à développer un modèle de machine learning pour prédire le risque de complications graves chez les patients atteints de COVID-19. En utilisant les données fournies par le gouvernement mexicain, nous analysons les symptômes, l'état de santé et les antécédents médicaux des patients pour établir des prédictions précises du niveau de risque.
 
