@@ -14,11 +14,11 @@ st.set_page_config(
 st.markdown("""
     <style>
     .stApp {
-        background: linear-gradient(135deg, #FFF5E6 0%, #FFDFD3 100%);
+        background: linear-gradient(135deg, #ffd5e6 0%, #FFDFD3 100%);
     }
     h1 {
-        color: #7A3DB8 !important;
-        font-family: 'Helvetica Neue', sans-serif;
+        color: #ea156a !important;
+        font-family: 'Helvetica Neue', poppins;
         font-weight: 800;
     }
     /* Style de la carte formulaire */
@@ -79,12 +79,12 @@ col1, col2 = st.columns([1, 1.2], gap="large")
 
 with col1:
     st.markdown("<br><br>", unsafe_allow_html=True)
-    st.title("Predict the world's patient safety.")
+    st.title("Projet Machine Learning – COVID-19 | Étape 6")
     st.write("Évaluez instantanément les risques de complications grâce à notre algorithme basé sur 1 million de dossiers médicaux.")
-    st.image("https://img.freepik.com/free-vector/medical-technology-concept-illustration_114360-6363.jpg")
+    st.image("https://fr.freepik.com/vecteurs-libre/contexte-epidemie-coronavirus-covid-19_8036036.htm#from_element=cross_selling__vector.jpeg")
 
 with col2:
-    st.markdown("### Patient Health Profile")
+    st.markdown("### Prédiction du risque")
     
     age = st.slider("Âge du patient", 0, 100, 30)
     
@@ -103,7 +103,7 @@ with col2:
         renal = st.selectbox("Maladie Rénale", [1, 2], format_func=lambda x: "Oui" if x == 1 else "Non")
         tobacco = st.selectbox("Tabagisme", [1, 2], format_func=lambda x: "Oui" if x == 1 else "Non")
 
-    if st.button("Create Prediction"):
+    if st.button("Lancer la prédiction"):
         # Données d'entrée pour le modèle
         input_data = np.array([[age, sex, pneumonia, diabetes, copd, asthma, inmsupr, hipertension, obesity, renal, tobacco]])
         
@@ -112,8 +112,8 @@ with col2:
 
         st.markdown("---")
         if prediction == 1:
-            st.error(f"🚨 **Haut Risque Détecté** (Probabilité : {proba*100:.1f}%)")
+            st.error(f" **Haut Risque Détecté** (Probabilité : {proba*100:.1f}%)")
         else:
-            st.success(f"✅ **Risque Faible** (Probabilité : {proba*100:.1f}%)")
+            st.success(f" **Risque Faible** (Probabilité : {proba*100:.1f}%)")
 
 st.markdown("<p style='text-align: center; color: grey; font-size: 12px; margin-top:50px;'>Projet Python Groupe 5 - Analyse COVID-19</p>", unsafe_allow_html=True)
