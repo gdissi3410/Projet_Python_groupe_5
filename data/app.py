@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 st.markdown(
-    "<h1 style='color:#7A3DB8;'>🦠 Prédiction du risque COVID-19</h1>",
+    "<h1 style='color:#7A3DB8;'>Prédiction du risque COVID-19</h1>",
     unsafe_allow_html=True
 )
 
@@ -62,7 +62,7 @@ model.fit(X, y)
 # -----------------------------------------------------
 # INTERFACE UTILISATEUR
 # -----------------------------------------------------
-st.subheader("🧾 Informations du patient")
+st.subheader("Informations du patient")
 
 age = st.slider("Âge du patient", 0, 100, 30)
 sex = st.selectbox("Sexe", [1, 2], format_func=lambda x: "Homme" if x == 1 else "Femme")
@@ -89,9 +89,9 @@ if st.button("🔍 Lancer la prédiction"):
     proba = model.predict_proba(input_data)[0][1]
 
     if prediction == 1:
-        st.error(f"⚠️ Patient à haut risque (Probabilité : {proba*100:.2f}%)")
+        st.error(f"Patient à haut risque (Probabilité : {proba*100:.2f}%)")
     else:
-        st.success(f"✅ Patient à faible risque (Probabilité : {proba*100:.2f}%)")
+        st.success(f" Patient à faible risque (Probabilité : {proba*100:.2f}%)")
 
 st.divider()
 st.caption("Projet Machine Learning – COVID-19 | Étape 6")
