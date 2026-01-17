@@ -4,7 +4,7 @@
 
 Ce projet vise à développer un modèle de machine learning pour prédire le risque de complications graves chez les patients atteints de COVID-19. En utilisant les données fournies par le gouvernement mexicain, nous analysons les symptômes, l'état de santé et les antécédents médicaux des patients pour établir des prédictions précises du niveau de risque.
 
-## 🎯 Objectif
+##  Objectif
 
 Construire un modèle d'apprentissage automatique capable de :
 - Analyser les données de plus d'un million de patients
@@ -12,7 +12,7 @@ Construire un modèle d'apprentissage automatique capable de :
 - Prédire si un patient est à haut risque de complications liées au COVID-19
 - Aider les autorités sanitaires à allouer efficacement les ressources médicales
 
-## 📊 Données
+##  Données
 
 ### Source
 Ensemble de données fourni par le gouvernement mexicain contenant :
@@ -36,7 +36,7 @@ Ensemble de données fourni par le gouvernement mexicain contenant :
 - Valeur `2` = Non
 - Valeurs `97, 99` = Données manquantes (à traiter)
 
-## 🛠️ Installation
+##  Installation
 
 ### Prérequis
 - Python 3.8+
@@ -54,7 +54,7 @@ Les packages requis incluent :
 - **scikit-learn** : Modèles de machine learning
 - **streamlit** : Interface interactive (optionnel)
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 .
@@ -66,7 +66,7 @@ Les packages requis incluent :
 │   └── covid19_data.csv        # Données brutes originales
 ```
 
-## 🔍 Étapes du projet
+##  Étapes du projet
 
 ### 1. Préparation et nettoyage des données
 - Chargement du jeu de données dans un DataFrame Pandas
@@ -99,7 +99,7 @@ Les packages requis incluent :
 - Matrice de confusion et métriques de performance
 - Recommandations basées sur les résultats
 
-## 🚀 Utilisation
+##  Utilisation
 
 ### Exécuter le notebook
 ```bash
@@ -111,7 +111,7 @@ jupyter notebook Projet_Python.ipynb
 streamlit run app.py
 ```
 
-## 📈 Résultats attendus
+##  Résultats attendus
 
 Le projet fournira :
 - Un modèle entraîné capable de prédire le risque de complications COVID-19
@@ -119,17 +119,17 @@ Le projet fournira :
 - Des visualisations explorant les relations entre variables
 - Des recommandations pour l'allocation des ressources médicales
 
-## 📚 Références
+##  Références
 
 - Source des données : Gouvernement mexicain
 - Contexte : Pandémie COVID-19 2020-2021
 - Problématique : Allocation efficace des ressources médicales
 
-## 👤 Auteur
+##  Auteur
 
 Projet développé dans le cadre d'une formation en Python et Data Science.
 
-## 📝 Notes
+##  Notes
 
 - Le fichier `covid19_final_ready.csv` contient les données nettoyées et prêtes à l'analyse
 - Consulter le notebook pour tous les détails des analyses effectuées
