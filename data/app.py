@@ -81,7 +81,7 @@ with col1:
     st.markdown("<br><br>", unsafe_allow_html=True)
     st.title("Projet Machine Learning – COVID-19 | Étape 6")
     st.write("Évaluez instantanément les risques de complications grâce à notre algorithme basé sur 1 million de dossiers médicaux.")
-    st.image("https://fr.freepik.com/vecteurs-libre/contexte-epidemie-coronavirus-covid-19_8036036.htm#from_element=cross_selling__vector.jpeg")
+    st.image("https://img.freepik.com/vecteurs-libre/contexte-epidemie-coronavirus-covid-19_1035-18844.jpg?t=st=1768663060~exp=1768666660~hmac=4d2766fbd9a2ee9b6b0d013c467347b876d18f5c8fda4d91aabbfc83e456f149")
 
 with col2:
     st.markdown("### Prédiction du risque")
